@@ -7,7 +7,6 @@
 [![PyTorch Geometric](https://img.shields.io/badge/PyTorch_Geometric-latest-3C2179)]()
 [![torchdiffeq](https://img.shields.io/badge/torchdiffeq-ODE_Solver-orange)]()
 [![Gradio](https://img.shields.io/badge/Gradio-Demo_App-FF7C00?logo=gradio&logoColor=white)]()
-[![License](https://img.shields.io/badge/License-MIT-yellow)]()
 
 ---
 
@@ -57,7 +56,7 @@ Evaluasi pada test set (1 hari, data disimulasikan dan dikalibrasi ke pola makro
 
 → GNN-ODE unggul **88.3%** dibanding baseline rata-rata historis sederhana.
 
-### (b) Perbandingan Adil / Apples-to-Apples (20 node sample, termasuk ARIMA)
+### (b) Perbandingan Apples-to-Apples (20 node sample, termasuk ARIMA)
 
 | Model               | MAE (km/h) | Cakupan          |
 |---------------------|------------|------------------|
@@ -81,7 +80,7 @@ Evaluasi pada test set (1 hari, data disimulasikan dan dikalibrasi ke pola makro
 | Jam Sibuk   | 0.70       | 0.89        | 84  |
 | Non-Sibuk   | 0.55       | 0.72        | 192 |
 
-> ⚠️ **Catatan jujur:** angka MAE yang sangat rendah ini adalah prediksi **1-step (5 menit ke depan)** dengan autokorelasi tinggi terhadap kondisi saat ini, pada data **sintetis** (bukan sensor riil), dan test set hanya mencakup 1 hari. Lihat tab "Batasan Model" di aplikasi untuk konteks lengkap sebelum menafsirkan angka ini sebagai performa absolut.
+> ⚠️ **Catatan:** angka MAE yang sangat rendah ini adalah prediksi **1-step (5 menit ke depan)** dengan autokorelasi tinggi terhadap kondisi saat ini, pada data **sintetis** (bukan sensor riil), dan test set hanya mencakup 1 hari. Lihat tab "Batasan Model" di aplikasi untuk konteks lengkap sebelum menafsirkan angka ini sebagai performa absolut.
 
 ---
 
@@ -183,13 +182,3 @@ Graph_Neural_ODE_Sudirman_Thamrin/
 - Rencana pengembangan: integrasi data sensor riil (mis. dari GPS kendaraan umum atau Google/TomTom API), perluasan area cakupan, dan pipeline real-time.
 
 ---
-
-## 👤 Author
-
-**[Nama Kamu]**
-Informatika, Universitas AMIKOM Yogyakarta
-[LinkedIn](#) · [GitHub](#)
-
-## 📄 License
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
