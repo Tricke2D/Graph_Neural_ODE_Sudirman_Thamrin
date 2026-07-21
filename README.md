@@ -17,11 +17,6 @@ Sudirman–Thamrin bukan sekadar jalan protokol — ini **urat nadi lalu lintas 
 
 Masalahnya, kebanyakan pendekatan prediksi lalu lintas konvensional (rata-rata historis, ARIMA per-ruas, bahkan LSTM) memperlakukan tiap ruas jalan **secara terpisah** — padahal kemacetan adalah fenomena **spasial**: kondisi satu ruas jalan sangat dipengaruhi ruas-ruas di sekitarnya. Model yang tidak memahami struktur jaringan jalan akan kesulitan menangkap bagaimana kemacetan menjalar dari satu titik ke titik lain.
 
-**Pertanyaan yang coba dijawab proyek ini:**
-> Bagaimana memprediksi kecepatan lalu lintas di setiap ruas jalan Sudirman–Thamrin secara akurat, dengan tetap memperhitungkan bagaimana kemacetan menjalar melalui struktur graf jaringan jalan — dan bisa diprediksi ke berbagai horizon waktu tanpa retrain model terpisah untuk tiap horizon?
-
-Jawabannya: **Graph Neural ODE (GNN-ODE)** — pendekatan yang menggabungkan Graph Convolutional Network (menangkap struktur spasial jaringan jalan) dengan Neural ODE (memodelkan evolusi kondisi lalu lintas sebagai sistem dinamis kontinu, bukan langkah waktu diskrit).
-
 ---
 
 ## 🖥️ Demo Aplikasi
